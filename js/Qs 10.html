@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alert("Guess me favorite movie ,and press q exit this game or enter every charecter lower case");
+        let fmovie="rrr";
+        let guess = prompt("Enter Movie name : ");
+
+        while((fmovie != guess) && (guess != "q")){
+            guess=prompt("Wrong guess. Try again : ");
+        }
+
+        if(fmovie == guess){
+                document.write("Yehh... This Movie is :",guess);
+            }
+            else{
+                document.write("You Quit")
+            }
+    </script>
+</body>
+</html>
